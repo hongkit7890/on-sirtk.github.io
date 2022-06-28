@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<SCRIPT language="JavaScript">
+   function check() {
+      var score = 0;
+      // MC question 1
+      if (quiz.q1[1].checked) {                  // 3rd answer correct
+         quiz.ans1.value = "You are correct!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans1.value = "You are wrong!";
+      }
+
+      quiz.scorebox.value = "You score " + score + " mark(s).";
+   }
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<FORM name="quiz">
+Q1. 那一件是輸入設備?</font>
+<P>
+   <INPUT type="radio" name="q1" value="1">打印機<BR>
+   <INPUT type="radio" name="q1" value="2">鍵盤<BR>
+   <INPUT type="radio" name="q1" value="3">屏幕<BR>
+   <INPUT type="radio" name="q1" value="4">揚聲器<BR>
+   <INPUT type="text" name="ans1">
+</P>
+      
+<p>
+   <INPUT type="button" value="Check" onClick="check();">
+   <INPUT type="text" name="scorebox">
+
+</FORM>
+</BODY>
+</HTML>
