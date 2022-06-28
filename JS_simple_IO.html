@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <h3>簡單輸入 / 輸出</h3>
+    <input type="text" id="myName" placeholder="輸入文字">
+    <button id="btn">執行</button><br><br>
+    <input name="result" id="result" type="text"  placeholder="輸出結果">
+    
+	<script>
+    const btn= document.getElementById("btn");
+    btn.addEventListener('click', function(){   				// 按「執行」後會執行
+        var name = document.getElementById("myName").value;		// 把輸入的文字儲存到 「name」變量
+        output = "你好" + name;
+		
+		
+		
+		document.getElementById("result").value = output ; //輸出結果
+    });
+    </script>
+</body>
+</html>
